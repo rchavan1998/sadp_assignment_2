@@ -1,0 +1,81 @@
+##Author: Rahul Ghanshyam Chavan
+##Github Repo : https://github.com/rchavan1998/sadp_assignment_2.git
+
+##  Singleton and Abstract Factory Patterns demonstration using Microoffice Use Case Implementation
+
+This Java application was created to evaluate the graphical user interfaces (GUIs) of the Word90, Word00, Word10, and Word21 generations of word processing applications produced by MicroOffice. The application makes use of the Singleton and Abstract Factory design patterns to control the generation of GUI elements unique to every Word generation, guaranteeing that a test has no more than two instances of any given generation.
+
+## Features
+1. Comprehensive testing of GUI components, including Panels, Buttons, and Textboxes, for various generations of Word Processing Applications.
+2. Integration of the Abstract Factory and Singleton design patterns to streamline object creation and limit the number of instances for each Word generation.
+
+## Prerequisites
+Before running the Java program, ensure you have the following:
+1. Java Development Kit (JDK) 17 or later installed on your system.
+2. Create a `testlist.txt` file and list your desired Word generations, with each generation on a separate line.
+3. Eclipse IDE
+
+## Setup and Deployment Process
+    ### Using Eclipse
+	1. File -> Import Project from File System
+	2. Select Folder HW2_MicroOffice_Word_Processing
+	3. Start WordGenerationApp.java as Run as Java Application
+
+  
+    ### Running using .jar file
+	command: java -jar HW2_MicroOffice_Word_Processin.jar	
+
+
+## Sample Output
+# Terminal
+Panel Word90
+Button Word90
+Textbox Word90
+Panel Word00
+Button Word00
+Textbox Word00
+Panel Word90
+Button Word90
+Textbox Word90
+Panel Word21
+Button Word21
+Textbox Word21
+Panel Word10
+Button Word10
+Textbox Word10
+Panel Word00
+Button Word00
+Textbox Word00
+Panel Word21
+Button Word21
+Textbox Word21
+Please Note that the following word is being tested more than twice -> Word90
+Panel Word90
+Button Word90
+Textbox Word90
+Please Note that the following word is being tested more than twice -> Word00
+Panel Word00
+Button Word00
+Textbox Word00
+
+## File Description
+
+Here are the main files used in the code:
+
+### testlist
+Test cases to be run containing the list of Word generations.
+
+### WordGenerationApp.java
+Contains the main class for launching the GUI testing program.
+
+### SingletonValidator.java
+Used to maintain word count during GUI testing.
+
+###AbstractWordFactory.java
+Used for generating GUI component blueprint as per each word generation factory.
+
+###Word00Factory, Word10Factory, Word21Factory, Word90Factory
+Factory classes each denoting seperate word generation.
+
+###Word21Panel,Word10Panel,Word90Panel, Word00Panel, Word21Textbox, Word21Textbox, Word00Textbox, Word10Textbox, Word90Button, Word21Button, Word10Button, Word00Button
+Variation classes 
